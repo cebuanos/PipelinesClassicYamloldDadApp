@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6C2583
 		common\azure-pipelines.yml = common\azure-pipelines.yml
 	EndProjectSection
 EndProject
-Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "myWebDeploy", "..\..\..\..\..\..\Azure Training\Ex_Files_Azure_DevOps_YAML\Exercise Files\02_04_begin\myWebDeploy\myWebDeploy.deployproj", "{3DA4FB33-FC70-4364-A177-CFBE2B9BA30F}"
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "myWebDeploy", "myWebDeploy\myWebDeploy.deployproj", "{3DA4FB33-FC70-4364-A177-CFBE2B9BA30F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
