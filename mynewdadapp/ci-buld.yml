@@ -21,4 +21,4 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- template: ci-template.yml
+- template: ../ci-template.yml
