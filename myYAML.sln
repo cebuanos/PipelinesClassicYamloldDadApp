@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6C258389-16E6-48AA-BE70-D5779238A3A5}"
 	ProjectSection(SolutionItems) = preProject
 		common\azure-pipelines.yml = common\azure-pipelines.yml
+		ci-template.yml = ci-template.yml
 	EndProjectSection
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "myWebDeploy", "myWebDeploy\myWebDeploy.deployproj", "{3DA4FB33-FC70-4364-A177-CFBE2B9BA30F}"
