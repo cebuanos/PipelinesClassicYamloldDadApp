@@ -10,7 +10,7 @@ trigger:
     - '*'
   paths:
     include:
-    - myNewDadApp/
+    - myAPI/
 
 pool:
   vmImage: 'windows-latest'
