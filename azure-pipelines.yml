@@ -81,11 +81,11 @@ stages:
         csmFile: '$(System.ArtifactsDirectory)/**/WebAppWithSlots-Windows.json'
         csmParametersFile: '$(System.ArtifactsDirectory)/**/azuredeploy.parameters.json'
         deploymentMode: 'Incremental'
-
+        
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
         azureSubscription: 'Visual Studio Professional(533aad5d-9145-470b-a877-6ff96917d591)'
         appType: 'webApp'
         WebAppName: 'avanadeYML'
-        packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
