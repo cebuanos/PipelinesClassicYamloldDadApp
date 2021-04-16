@@ -59,8 +59,9 @@ stages:
 - stage: TestDeployment
   jobs:
   - job: PublishTheCode
+    variables: 
+    - group: myYAML-Demos
     steps:
-    
     - task: DownloadBuildArtifacts@0
       inputs:
         buildType: 'current'
@@ -71,8 +72,8 @@ stages:
     - task: AzureResourceManagerTemplateDeployment@3
       inputs:
         deploymentScope: 'Resource Group'
-        azureResourceManagerConnection: 'Visual Studio Professional(533aad5d-9145-470b-a877-6ff96917d591)'
-        subscriptionId: '533aad5d-9145-470b-a877-6ff96917d591'
+        azureResourceManagerConnection: '$(AzSPN)'
+        subscriptionId: '$(AzSubID)'
         action: 'Create Or Update Resource Group'
         resourceGroupName: 'lz-yaml'
         location: 'Central US'
@@ -84,7 +85,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Visual Studio Professional(533aad5d-9145-470b-a877-6ff96917d591)'
+        azureSubscription: '$(AzSPN)'
         appType: 'webApp'
         WebAppName: 'avanadeYML'
         packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
