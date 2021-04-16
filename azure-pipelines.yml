@@ -86,4 +86,4 @@ stages:
         azureSubscription: 'Visual Studio Professional(533aad5d-9145-470b-a877-6ff96917d591)'
         appType: 'webApp'
         WebAppName: 'avanadeYML'
-        packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
+        packageForLinux: '$(System.ArtifactsDirectory)/**/WebAppContent/*.zip'
