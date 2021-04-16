@@ -59,8 +59,6 @@ stages:
 - stage: TestDeployment
   jobs:
   - job: PublishTheCode
-    variables: 
-    - group: myYAML-Demos
     steps:
     - task: DownloadBuildArtifacts@0
       inputs:
